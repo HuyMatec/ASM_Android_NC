@@ -112,7 +112,7 @@
         android:textColor="#fff"
         android:textStyle="bold"
         android:textAlignment="center"
-        android:background="#D81B60"
+        android:background="@drawable/backgroundlogout"
         android:textSize="25sp"/>
 
 </LinearLayout>

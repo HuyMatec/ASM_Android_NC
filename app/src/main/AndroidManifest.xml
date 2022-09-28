@@ -17,6 +17,7 @@
 
         <activity
             android:name=".views.LoadingActivity"
+            android:label="@string/loading"
             android:exported="false" />
         <activity
             android:name=".views.CourseActivity"
@@ -26,15 +27,19 @@
             android:exported="false" />
         <activity
             android:name=".views.HomeActivity"
+            android:label="@string/home"
             android:exported="false" />
         <activity
             android:name=".views.RegisterActivity"
+            android:label="@string/register"
             android:exported="false" />
         <activity
             android:name=".views.LoginActivity"
+            android:label="@string/login"
             android:exported="false" />
         <activity
             android:name=".views.MainActivity"
+            android:label="@string/main"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
