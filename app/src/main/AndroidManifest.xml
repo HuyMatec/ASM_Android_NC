@@ -14,7 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ASM_Android_NC"
         tools:targetApi="31">
-
+        <activity
+            android:name=".ahihi"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".views.LoadingActivity"
             android:exported="false" />
