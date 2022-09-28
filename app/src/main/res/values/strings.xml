@@ -3,6 +3,5 @@
     <string name="login"><font fgcolor='#FFFF00'>Đăng nhập</font></string>
     <string name="register"><font fgcolor='#FFE4B5'>Đăng ký</font></string>
     <string name="home"><font fgcolor='#00FFFF'>Màn hình chính</font></string>
-    <string name="main"><font fgcolor='#FFFFFF'>Trang chủ</font></string>
     <string name="loading"><font fgcolor='#FF66FF'>Đang tải...</font></string>
 </resources>

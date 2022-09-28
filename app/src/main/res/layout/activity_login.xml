@@ -18,7 +18,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-
             android:padding="25dp">
 
             <ImageView
@@ -43,15 +42,16 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:paddingBottom="20dp"
                 android:orientation="vertical">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
                     android:layout_gravity="center"
                     app:startIconDrawable="@drawable/ic_email"
                     app:endIconMode="clear_text">
@@ -71,17 +71,17 @@
                         android:textSize="20sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-            </LinearLayout>
+            </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:paddingBottom="50dp">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
                     app:startIconDrawable="@drawable/ic_lock"
                     app:passwordToggleEnabled="true">
                     <EditText
@@ -98,13 +98,19 @@
                         android:background="@drawable/border_edt"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
-            </LinearLayout>
+            </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:gravity="center">
+                android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="226dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp">
+
+
                 <Button
                     android:id="@+id/btnRegister"
                     android:layout_width="170dp"
@@ -115,16 +121,21 @@
                     android:textSize="30sp"
                     android:textAllCaps="false" />
 
+
+
+            </RelativeLayout>
+
                 <Button
                     android:id="@+id/btnLogin"
                     android:layout_width="170dp"
                     android:layout_height="60dp"
-                    android:layout_marginStart="50dp"
+                    android:layout_toRightOf="@id/btnRegister"
                     android:backgroundTint="#3949AB"
                     android:onClick="checkLogin"
                     android:text="Login"
                     android:textAllCaps="false"
                     android:textSize="30sp" />
+
             </LinearLayout>
 
         </LinearLayout>
